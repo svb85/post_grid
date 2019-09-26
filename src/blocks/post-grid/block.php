@@ -218,7 +218,8 @@ function ub_render_post_grid_block( $attributes ) {
         $block_content = sprintf(
             //'<%1$s class="%2$s">%3$s<div class="%4$s">%5$s</div></%1$s>',
             esc_attr( $grid_class ),
-            $post_grid_markup
+            $post_grid_markup,
+            '<h3>h3 added</h3>'
         );
         return $post_grid_markup;
     }
